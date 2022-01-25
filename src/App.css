@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: skyblue;
+}
+.header{
+  margin: auto auto;
+  display: flex;
+  width: 90vw;
+  height: 30vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  place-content: center;
+  gap: 3rem;
+}
+form label{
+margin-right: 2rem;
+font-weight: 400;
+font-size: 1.3rem;
+}
+input[type='text']{
+  min-width: 10rem;
+  width: 13rem;
+  height: 3rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+button{
+  background: cornflowerblue;
+  border: none;
+  color: white;
+  min-width: 4rem;
+  height: 3rem;
+  width: 5rem;
+}
+button:hover{
+  background: rgb(56, 120, 238);
+}
+.red{
+  background-color: rgb(245, 119, 119);
+  color: rgb(99, 13, 13);
+  padding: 1rem;
+  width: 35vw;
+  text-align: center;
+  border-radius: 2rem;
+  position: absolute;
+  top: 1rem;
+}
+.green{
+  background-color: rgb(112, 247, 74);
+  color: rgb(6, 96, 12);
+  padding: 1rem;
+  width: 35vw;
+  text-align: center;
+  border-radius: 2rem;
+  position: absolute;
+  top: 1rem;
+}
+p span{
+  float: right;
+  display: absolute;
+  cursor: pointer;
+}
+.allContent{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.grocery{
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  width: 50vw;
+  text-transform: capitalize;
+  margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+.grocery div{
+  display: flex;
+  gap: 3rem;
+}
+.names{
+  width: 60%;
+  overflow-wrap: break-word;
+}
+.grocery h4{
+  text-align: left;
+  overflow: scroll;
+}
+.edit{
+  color: green;
+  position: absolute;
+  right: 34vw;
+}
+.delete{
+  color: red;
+  position: absolute;
+  right: 30vw;
+}
+
+.edit:hover, .delete:hover{
+  cursor: pointer;
+}
+.clear{
+  margin: 0 auto;
+  width: 30vw;
+  text-align: center;
+  font-weight: 300;
+  background-color: rgb(245, 119, 119);
+  color: rgb(126, 31, 31);
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+
+
+@media only screen and (max-width:728px) {
+  .allContent{
+    margin-top: 3rem;
+  }
+  .grocery{
+    width: 90vw;
+  }
+  .edit{
+    right: 20vw
+  }
+  .delete{
+    right: 10vw;
+  }
+  form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 6rem;
+  }
+}
